@@ -88,10 +88,10 @@ export default function NavTabs() {
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
-     {/* <Songs/>  */}
+     <Songs/> 
       </TabPanel>
       <TabPanel value={value} index={1}>
-        {/* <Playlist/> */}
+        <Playlist/>
       </TabPanel>
      
     </div>
