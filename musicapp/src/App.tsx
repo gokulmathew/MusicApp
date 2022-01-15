@@ -4,7 +4,6 @@ import { ThemeProvider } from "@material-ui/styles";
 import ErrorBoundary from "./components/ErrorBoundary";
 import AppRoutes from "./routes/index";
 import { getSongs } from "./actions";
-import "./App.css";
 import theme from "./styles/muiTheme";
 
 function App() {

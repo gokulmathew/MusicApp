@@ -1,27 +1,20 @@
-import React, { Suspense, lazy } from "react";
-import {
-  Route,
-  RouteProps,
-  Switch,
-  BrowserRouter,
-  Link,
-  Redirect,
-  withRouter,
-} from "react-router-dom";
-
-// const TabComponent = React.lazy(() => import("../components/Tab"));
-
-import Tab from "../components/Tab";
-import Playlist from "../components/Playlist";
+import React, { Suspense } from "react";
+import { Route, Switch } from "react-router-dom";
 import Layout from "../container/Layout";
-import NotFound from "../components/NotFoundPage";
+
+// Lazy Loading components
+const TabComponent = React.lazy(() => import("../components/Tab"));
+const PlaylistComponent = React.lazy(() => import("../components/Playlist"));
+const NotFoundComponent = React.lazy(
+  () => import("../components/NotFoundPage")
+);
 
 const AppRoutes = () => (
   <Suspense fallback={<div>Loading...</div>}>
     <Switch>
-      <Layout exact path="/" component={Tab} />
-      <Layout exact path="/playlist" component={Playlist} />
-      <Route path="*" component={NotFound} />
+      <Layout exact path="/" component={TabComponent} />
+      <Layout exact path="/playlist" component={PlaylistComponent} />
+      <Route path="*" component={NotFoundComponent} />
     </Switch>
   </Suspense>
 );
