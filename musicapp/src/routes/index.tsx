@@ -6,7 +6,7 @@ import Layout from "../container/Layout";
 const TabComponent = React.lazy(() => import("../components/Tab"));
 const PlaylistComponent = React.lazy(() => import("../components/Playlist"));
 const NotFoundComponent = React.lazy(
-  () => import("../components/NotFoundPage")
+  () => import("../pages/PageNotFound")
 );
 
 const AppRoutes = () => (
