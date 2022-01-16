@@ -9,7 +9,7 @@ import Box from '@material-ui/core/Box';
 
 
 import Songs from '../../pages/Songs'
-import Playlist from '../Playlists'
+import Playlist from '../../pages/Playlists'
 
 function TabPanel(props:any) {
   const { children, value, index, ...other } = props;
@@ -62,7 +62,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: 'lightgrey',
   },
   backgroundColor:{
-    backgroundColor:'black'
+    backgroundColor:'green'
   }
 }));
 

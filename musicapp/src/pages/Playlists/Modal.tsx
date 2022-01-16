@@ -10,7 +10,7 @@ import DialogTitle from '@material-ui/core/DialogTitle';
 import { PLAYLISTS_MODAL_DESC , PLAYLISTS_MODAL_CANCEL , PLAYLISTS_MODAL_CREATE} from '../../constants'
 
 
-function Modal({handleClose,open,value,onChange,onClick}) {
+function Modal({handleClose,open,value,onChange,onClick}:any) {
 
   return (
     <div>

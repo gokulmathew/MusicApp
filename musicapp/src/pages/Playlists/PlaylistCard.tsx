@@ -25,11 +25,11 @@ const useStyles = makeStyles(() => ({
 }));
 
 
-function PlaylistCard({ data }) {
+function PlaylistCard({ data }:any) {
     const classes = useStyles();
     const history = useHistory();
 
-    const handleClick = (data) => {
+    const handleClick = (data:any) => {
         localStorage.setItem("playlist",JSON.stringify(data))
         history.push({
             pathname: '/playlist',
@@ -39,7 +39,7 @@ function PlaylistCard({ data }) {
 
     return (
         <div style={{ marginTop: '20px' }}>
-            { data?.length > 0 ? data?.map((val, i) => (
+            { data?.length > 0 ? data?.map((val:any, i:any) => (
                 <Card className={classes.root} onClick={() => handleClick(val)} key={i}>
                     <div className={classes.details}>
                         <CardContent className={classes.content}>

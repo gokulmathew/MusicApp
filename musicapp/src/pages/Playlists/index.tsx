@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Playlist() {
 
-    const playlistState = useSelector((state) => state?.data?.playlists)
+    const playlistState = useSelector((state:any) => state?.data?.playlists)
     const [open, setOpen] = React.useState(false);
     const [playlistName , setPlaylistName] = useState('');
     const [playList,setPlaylist] = useState([])
@@ -40,7 +40,7 @@ export default function Playlist() {
       setOpen(false);
     };
 
-    const handleChange = (e) => {
+    const handleChange = (e:any) => {
         setPlaylistName(e.target.value)
     }
 

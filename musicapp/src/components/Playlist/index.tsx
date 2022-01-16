@@ -29,9 +29,9 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-function Playlist({ location, history }) {
+function Playlist({ location, history }:any) {
     const classes = useStyles();
-    const [playlist, setPlaylist] = useState(null)
+    const [playlist, setPlaylist] = useState<any>(null)
     const [count, setCount] = useState(0)
 
     useEffect(() => {
@@ -44,12 +44,12 @@ function Playlist({ location, history }) {
         }
     }, [location.state])
 
-    const handleClick = (val) => {
-        let obj1 = playlist
+    const handleClick = (val:any) => {
+        let obj1 :any= playlist
         let obj2 = val
         obj1 = {
             ...obj1,
-            songs: obj1.songs.filter((x) => x.songId !== obj2.songId),
+            songs: obj1.songs.filter((x:any) => x.songId !== obj2.songId),
         };
         localStorage.setItem("playlist", JSON.stringify(obj1))
         setPlaylist(obj1)
@@ -66,7 +66,7 @@ function Playlist({ location, history }) {
         shuffledArray.sort(function () {
             return 0.5 - Math.random();
         });
-        let shuffledPlaylist = playlist
+        let shuffledPlaylist:any = playlist
         shuffledPlaylist.songs = [...shuffledArray]
         setCount(count => count + 1)
         setPlaylist(shuffledPlaylist)

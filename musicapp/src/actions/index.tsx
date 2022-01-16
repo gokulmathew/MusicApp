@@ -2,7 +2,7 @@ import { GET_SONGS,FILTER_SONGS,CREATE_PLAYLIST,LOCAL_STORAGE_CREATE_PLAYLIST,AD
 import {baseURL} from '../utils/AxiosConfiguration'
 import { mergeById } from '../utils'
 
-export const getSongs = () => async (dispatch) => {
+export const getSongs = () => async (dispatch:any) => {
   console.log('baseURL')
 
   try {
@@ -25,7 +25,7 @@ export const getSongs = () => async (dispatch) => {
 
 };
 
-export const filterSongs = (data) => (dispatch) => {
+export const filterSongs = (data:any) => (dispatch:any) => {
 
   try {
     dispatch({
@@ -39,7 +39,7 @@ export const filterSongs = (data) => (dispatch) => {
 
 };
 
-export const createPlaylist = (data) => (dispatch) => {
+export const createPlaylist = (data:any) => (dispatch:any) => {
   try {
     dispatch({
       type: CREATE_PLAYLIST,
@@ -50,7 +50,7 @@ export const createPlaylist = (data) => (dispatch) => {
   }
 }
 
-export const localStorageCreatePlaylist = (data) => (dispatch) => {
+export const localStorageCreatePlaylist = (data:any) => (dispatch:any) => {
   try {
     dispatch({
       type: LOCAL_STORAGE_CREATE_PLAYLIST,
@@ -61,7 +61,7 @@ export const localStorageCreatePlaylist = (data) => (dispatch) => {
   }
 }
 
-export const addSongToPlaylist = (name,song) => (dispatch) => {
+export const addSongToPlaylist = (name:any,song:any) => (dispatch:any) => {
   try{
     dispatch({
       type: ADD_SONG_TO_PLAYLIST,
