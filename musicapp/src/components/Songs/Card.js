@@ -13,7 +13,6 @@ import { red } from "@material-ui/core/colors";
 import CardHeader from "@material-ui/core/CardHeader";
 import CloseIcon from '@material-ui/icons/Close';
 import MenuList from './MenuList';
-import Img1 from '../../img/img.jpg';
 import { truncate } from '../../utils'
 
 const useStyles = makeStyles((theme) => ({
@@ -86,7 +85,7 @@ function SongsCard({ data,showSM,showMenu,handleClick }) {
                         </div>
                         <CardMedia
                             className={classes.cover}
-                            image={val?.thumbnailUrl || Img1}
+                            image={val?.thumbnailUrl}
                             title={truncate(val?.title,20) || "Live from space album cover"}
                         />
                     </Card>
