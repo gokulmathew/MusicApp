@@ -4,10 +4,10 @@ import AddIcon from '@material-ui/icons/Add';
 import { makeStyles } from '@material-ui/core/styles';
 import { useDispatch,useSelector } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
-import Modal from './Modal';
+import Modal from './ModalBox';
 import {createdAt } from '../../utils'
 import {createPlaylist,localStorageCreatePlaylist} from '../../actions'
-import PlaylistCard from './PlaylistCard';
+import PlaylistCard from './Card';
 import {ADD_PLAYLIST} from '../../constants'
 
 const useStyles = makeStyles((theme) => ({

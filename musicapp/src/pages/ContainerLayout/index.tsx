@@ -10,7 +10,7 @@ import Fab from "@material-ui/core/Fab";
 import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
 import Zoom from "@material-ui/core/Zoom";
 import Box from "@material-ui/core/Box";
-import Header from "../../components/Header";
+import Header from "../../components/HeaderComponent";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -72,11 +72,9 @@ export default function ContainerLayout(props: any) {
             <CssBaseline />
             <Header />
             <Toolbar id="back-to-top-anchor" />
-            <Container>
               <Box my={4} m={2}>
                 <Component {...matchProps} />
               </Box>
-            </Container>
             <ScrollTop {...props}>
               <Fab
                 className={classes.backgroundColor}

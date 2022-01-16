@@ -2,7 +2,7 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import PropTypes from 'prop-types';
 import Typography from '@material-ui/core/Typography';
-import Card from './Card';
+import Card from './SongCard';
 import {  SONGS_CARD_CONTAINER_NO_SONGS} from "../../constants";
 
 

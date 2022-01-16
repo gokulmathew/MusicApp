@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { localStorageCreatePlaylist } from "../../actions";
-import CardsContainer from "./CardsContainer";
+import CardsContainer from "./SongCardsContainer";
 import Search from "./Search";
 
 const Songs = () => {

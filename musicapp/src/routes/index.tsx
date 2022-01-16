@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
 import { Route, Switch } from "react-router-dom";
-import ContainerLayout from "../pages/Container";
+import ContainerLayout from "../pages/ContainerLayout";
 
 // Lazy Loading components
 const TabComponent = React.lazy(() => import("../components/Tab"));

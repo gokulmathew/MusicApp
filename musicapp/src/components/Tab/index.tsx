@@ -8,8 +8,8 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 
 
-import Songs from '../../pages/Songs'
-import Playlist from '../../pages/Playlists'
+import Songs from '../../pages/SongsTab'
+import Playlist from '../../pages/PlayListTab'
 
 function TabPanel(props:any) {
   const { children, value, index, ...other } = props;

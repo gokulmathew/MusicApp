@@ -5,7 +5,7 @@ import MenuItem from "@material-ui/core/MenuItem";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
 import { useSelector,useDispatch } from 'react-redux';
 import { addSongToPlaylist } from '../../actions'
-import Modal from "./Modal";
+import Modal from "./ModalBox";
 import { SONGS_MENU_ITEM_ADD } from "../../constants";
 
 const ITEM_HEIGHT = 40;
