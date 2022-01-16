@@ -75,15 +75,6 @@ export default function ContainerLayout(props: any) {
               <Box my={4} m={2}>
                 <Component {...matchProps} />
               </Box>
-            <ScrollTop {...props}>
-              <Fab
-                className={classes.backgroundColor}
-                size="small"
-                aria-label="scroll back to top"
-              >
-                <KeyboardArrowUpIcon />
-              </Fab>
-            </ScrollTop>
           </React.Fragment>
         </>
       )}
