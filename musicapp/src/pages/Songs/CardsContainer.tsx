@@ -6,7 +6,7 @@ import Card from './Card';
 import {  SONGS_CARD_CONTAINER_NO_SONGS} from "../../constants";
 
 
-function CardsContainer({songs}) {
+function CardsContainer({songs}:any) {
 
   
     return (

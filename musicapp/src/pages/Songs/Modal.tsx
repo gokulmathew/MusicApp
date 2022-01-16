@@ -12,7 +12,7 @@ import FormControlLabel from "@material-ui/core/FormControlLabel";
 import FormControl from "@material-ui/core/FormControl";
 import {SONGS_MODAL_TITLE,SONGS_MODAL_DESC1,SONGS_MODAL_DESC2,SONGS_MODAL_CANCEL,SONGS_MODAL_SUBMIT} from '../../constants';
 
-function Modal({ open, handleSubmit, handleModalClose, handlePlaylistChange, playlists, value }) {
+function Modal({ open, handleSubmit, handleModalClose, handlePlaylistChange, playlists, value }:any) {
   return (
     <React.Fragment>
       <Dialog
@@ -34,7 +34,7 @@ function Modal({ open, handleSubmit, handleModalClose, handlePlaylistChange, pla
                 value={value}
                 onChange={(e) => handlePlaylistChange(e)}
               >
-                {playlists.map((val, i) => (
+                {playlists.map((val:any, i:any) => (
                   <FormControlLabel value={val?.name} key={i} control={<Radio />} label={val?.name} />
                 ))}
               </RadioGroup>

@@ -46,14 +46,14 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
-function SongsCard({ data,showSM,showMenu,handleClick }) {
+function SongsCard({ data,showSM,showMenu,handleClick }:any) {
     const classes = useStyles();
     const theme = useTheme();
 
  
     return (
         <>
-            {data?.map((val, i) => (
+            {data?.map((val:any, i:any) => (
                 <Grid item xs={12} sm={showSM ? 6 : 12} key={i}>
                     <Card className={classes.root} style={{backgroundColor: !showMenu ? 'lightgray': 'white'}}>
                         <CardHeader

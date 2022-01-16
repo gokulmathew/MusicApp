@@ -10,10 +10,10 @@ import { SONGS_MENU_ITEM_ADD } from "../../constants";
 
 const ITEM_HEIGHT = 40;
 
-export default function MenuList({songData}) {
+export default function MenuList({songData}:any) {
 
   let dispatch = useDispatch()
-  let state = useSelector(state => state?.data?.playlists) 
+  let state = useSelector((state:any) => state?.data?.playlists) 
 
   const [anchorEl, setAnchorEl] = useState(null);
   const [openModal, setOpenModal] = useState(false);
@@ -23,7 +23,7 @@ export default function MenuList({songData}) {
 
   const open = Boolean(anchorEl);
 
-  const handleClick = (event) => {
+  const handleClick = (event:any) => {
     setAnchorEl(event.currentTarget);
   };
 
@@ -40,7 +40,7 @@ export default function MenuList({songData}) {
     setOpenModal(false)
   }
 
-  const handlePlaylistChange = (e) => {
+  const handlePlaylistChange = (e:any) => {
     setPlaylist(e.target.value)
   }
 

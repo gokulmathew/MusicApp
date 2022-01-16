@@ -8,7 +8,7 @@ import PropTypes from 'prop-types';
 import Grid from '@material-ui/core/Grid';
 import Fab from '@material-ui/core/Fab';
 import ShuffleIcon from '@material-ui/icons/Shuffle';
-import Card from '../Songs/Card';
+import Card from '../../pages/Songs/Card';
 import { SHUFFLE_TEXT, NO_SONGS_IN_PLAYLIST } from '../../constants';
 
 const useStyles = makeStyles((theme) => ({

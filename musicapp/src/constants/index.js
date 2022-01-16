@@ -1,5 +1,5 @@
 /* components/Header */
-export const COMPOENTS_HEADER_TITLE_TEXT = "VBI Music Library";
+export const COMPOENTS_HEADER_TITLE_TEXT = "VBI Music Application";
 
 /* components/Playlist */
 export const SHUFFLE_TEXT = "Shuffle";
@@ -10,7 +10,7 @@ export const ADD_PLAYLIST = "Create Playlist";
 
 /* components/Playlists/Modal */
 export const PLAYLISTS_MODAL_DESC =
-  "To add a new playlist, please enter name of the playlist here. We will create you one.";
+  "To add a new playlist, please enter name of the playlist here..";
 export const PLAYLISTS_MODAL_CANCEL = "Cancel";
 export const PLAYLISTS_MODAL_CREATE = "Create";
 
@@ -25,12 +25,12 @@ export const SONGS_CARD_CONTAINER_NO_SONGS = "No songs to display";
 export const SONGS_MENU_ITEM_ADD = "Add to Playlist";
 
 /* components/Songs/Search */
-export const SONGS_SEARCH_DESC = "Search For A Song";
+export const SONGS_SEARCH_DESC = "Search For a Song";
 
 /* components/Songs/Modal */
-export const SONGS_MODAL_TITLE = "Add To Playlist";
+export const SONGS_MODAL_TITLE = "Add to Playlist";
 export const SONGS_MODAL_DESC1 =
-  "You can add this song to the playlist listed below.";
+  "You can add this song toany of the below playlists.";
 export const SONGS_MODAL_DESC2 = "Please create a playlist";
 export const SONGS_MODAL_CANCEL = "Cancel";
 export const SONGS_MODAL_SUBMIT = "Submit";

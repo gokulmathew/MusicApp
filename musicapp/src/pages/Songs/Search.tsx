@@ -32,7 +32,7 @@ export default function Search() {
     const [value,setValue] = useState('')
     const dispatch = useDispatch();
 
-    const handleChange = (e) => {
+    const handleChange = (e:any) => {
         setValue(e.target.value)
         dispatch(filterSongs(e.target.value))
     }
