@@ -1,4 +1,5 @@
 {
+  "homepage": "https://gokulmathew.github.io/MusicApp",
   "name": "musicapp",
   "version": "0.1.0",
   "private": true,
@@ -28,6 +29,8 @@
     "react-router-dom": "^5.2.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -52,6 +55,8 @@
     ]
   },
   "devDependencies": {
-    "@types/uuid": "^8.3.4"
+    "@types/uuid": "^8.3.4",
+    "gh-pages": "^3.2.3",
+    "mini-css-extract-plugin": "2.4.5"
   }
 }
