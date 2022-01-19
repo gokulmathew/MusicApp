@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/MusicApp/static/js/main.3ec14931.js",
+    "main.js": "/MusicApp/static/js/main.e8a7aa8c.js",
     "static/js/113.00a64d0f.chunk.js": "/MusicApp/static/js/113.00a64d0f.chunk.js",
     "static/js/746.62ce160c.chunk.js": "/MusicApp/static/js/746.62ce160c.chunk.js",
     "static/js/661.8dc7a034.chunk.js": "/MusicApp/static/js/661.8dc7a034.chunk.js",
@@ -8,7 +8,7 @@
     "static/js/728.5bb2f9fd.chunk.js": "/MusicApp/static/js/728.5bb2f9fd.chunk.js",
     "static/js/899.b415c246.chunk.js": "/MusicApp/static/js/899.b415c246.chunk.js",
     "index.html": "/MusicApp/index.html",
-    "main.3ec14931.js.map": "/MusicApp/static/js/main.3ec14931.js.map",
+    "main.e8a7aa8c.js.map": "/MusicApp/static/js/main.e8a7aa8c.js.map",
     "113.00a64d0f.chunk.js.map": "/MusicApp/static/js/113.00a64d0f.chunk.js.map",
     "746.62ce160c.chunk.js.map": "/MusicApp/static/js/746.62ce160c.chunk.js.map",
     "661.8dc7a034.chunk.js.map": "/MusicApp/static/js/661.8dc7a034.chunk.js.map",
@@ -17,6 +17,6 @@
     "899.b415c246.chunk.js.map": "/MusicApp/static/js/899.b415c246.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.3ec14931.js"
+    "static/js/main.e8a7aa8c.js"
   ]
 }
