@@ -11,7 +11,9 @@ const AppRoutes = () => (
   <Suspense fallback={<div>Loading...</div>}>
     <Switch>
       <ContainerLayout exact path="/" component={TabComponent} />
+      <ContainerLayout exact path="/MusicApp" component={TabComponent} />
       <ContainerLayout exact path="/playlist" component={PlaylistComponent} />
+
       <Route path="*" component={NotFoundComponent} />
     </Switch>
   </Suspense>
